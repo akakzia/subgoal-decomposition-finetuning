@@ -73,7 +73,7 @@ def main():
         peft_config=peft_config,
     )
 
-    # trainer.train()
+    trainer.train()
 
     trainer.save_model("./sft_output/final")
     tokenizer.save_pretrained("./sft_output/final")
